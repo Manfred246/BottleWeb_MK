@@ -18,7 +18,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <a href="/" class="navbar-brand">
+                <p><img src="static\images\logo_nav.png" width="40" height="40"></p>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
