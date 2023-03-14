@@ -38,20 +38,18 @@
 
       <a id="about"></a>
       <div class="page-content">
-        <div class="wrapper">
-          <div class="home">
+        <div class="home">
             <div class="top card"          
             </div>
-          </div>            
         </div>
       </div>
 
       <div class="wrapper">
-            <hr />
-            <footer>
-                <p>&copy; {{ year }} - Matthew | Kate corp</p>
-            </footer>
-        </div>      
+        <hr />
+        <footer>
+            <p>&copy; {{ year }} - Matthew | Kate corp</p>
+        </footer>
+      </div>
     </div>
 </body>
 </html>

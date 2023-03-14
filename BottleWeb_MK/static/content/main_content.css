@@ -101,9 +101,7 @@ body {
     border-radius: 2px;
 }
 
-/*------------------------------------------------------------
-  Buttons/Components
-------------------------------------------------------------*/
+/*Buttons/Components*/
 
 .btn,
 button,
@@ -141,9 +139,7 @@ button,
         outline: none;
     }
 
-/*------------------------------------------------------------
-  Site Style
-------------------------------------------------------------*/
+/*Site Style*/
 
 .site-header {
     text-align: center;
@@ -186,12 +182,13 @@ button,
 
 .page-content {
     margin: 30px auto;
-    width: 980px;
+    width: 980px;   
 }
 
     .page-content .top {
         text-align: center;
         padding: 120px 30px 30px;
+        border-radius: 10px;
     }
 
 @media (max-width: 1050px) {
