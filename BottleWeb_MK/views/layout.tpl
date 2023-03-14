@@ -25,7 +25,7 @@
 
         <div class="header-badge">
           <a data-toggle="modal" data-target="#shareModal">
-            <img height="100%" width="100" src="https://news.microsoft.com/wp-content/uploads/prod/sites/46/2019/10/quokka3-e1569098806163.jpg">
+            <img height="100%" width="100" src="http://celes.club/uploads/posts/2021-12/1640151094_11-celes-club-p-ulibayushchiisya-zverek-kvokka-zhivotnie-k-12.jpg">
           </a>
         </div>
       </header>
