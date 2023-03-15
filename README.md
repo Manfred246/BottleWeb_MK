@@ -18,4 +18,4 @@
  ### Разработчики
 - [Manfred 246](https://gist.github.com/Manfred246 "Профиль GitHub")
 
-- [KateSckoby](https://github.com/KateSkoby "Профиль GitHub")
+- [KateSkoby](https://github.com/KateSkoby "Профиль GitHub")
