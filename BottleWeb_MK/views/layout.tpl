@@ -14,7 +14,7 @@
     <div class="outer">
       <header class="site-header">
         <div class="wrapper">
-          <a class="site-title" href="#">QuokkaLand</a>
+          <image width="600px" height="300px" class="site-title" src="/static/images/Top_text.png">
           <div class="container noPrint">
             <a href="#about" class="btn btn-danger">About</a>
             <a href="#exp" class="btn btn-danger">Experience</a>
@@ -25,7 +25,7 @@
 
         <div class="header-badge">
           <a data-toggle="modal" data-target="#shareModal">
-            <img height="100%" width="100" src="http://celes.club/uploads/posts/2021-12/1640151094_11-celes-club-p-ulibayushchiisya-zverek-kvokka-zhivotnie-k-12.jpg">
+            <img height="100%" width="100" src="https://faunistics.com/wp-content/uploads/2022/02/5-7.jpg">
           </a>
         </div>
       </header>
