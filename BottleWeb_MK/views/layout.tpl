@@ -19,37 +19,37 @@
             <a href="#about" class="btn btn-danger">About</a>
             <a href="#exp" class="btn btn-danger">Experience</a>
             <a href="#edu" class="btn btn-danger">Education</a>
-            <a href="#skills" class="btn btn-danger">Skills</a>
+            <a href="#contacts" class="btn btn-danger">Contacts</a>
           </div>      
         </div>
 
         <div class="header-badge">
           <a data-toggle="modal" data-target="#shareModal">
-            <img height="100%" width="100" src="http://celes.club/uploads/posts/2021-12/1640151094_11-celes-club-p-ulibayushchiisya-zverek-kvokka-zhivotnie-k-12.jpg">
+            <img height="100%" width="100" src="https://faunistics.com/wp-content/uploads/2022/02/5-7.jpg">
           </a>
         </div>
       </header>
 
       <div class="page-content">
-        <div class="wrapper">
-            
+        <div class="wrapper">            
         </div>
       </div>     
+
 
       <a id="about"></a>
       <div class="page-content">
         <div class="home">
-            <div class="top card"          
-            </div>
+            <div class="top card"                   
+            </div>            
         </div>
       </div>
 
+      <a id="contacts"></a>
       <div class="wrapper">
         <hr />
-        <footer>
-            <p>&copy; {{ year }} - Matthew | Kate corp</p>
-        </footer>
+        <p>&copy; {{ year }} - Matthew | Kate corp</p>
       </div>
     </div>
+
 </body>
 </html>
