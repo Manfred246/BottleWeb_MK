@@ -21,13 +21,7 @@
             <a href="#edu" class="btn btn-danger">Education</a>
             <a href="#contacts" class="btn btn-danger">Contacts</a>
           </div>      
-        </div>
-
-        <div class="header-badge">
-          <a data-toggle="modal" data-target="#shareModal">
-            <img height="100%" width="100" src="https://faunistics.com/wp-content/uploads/2022/02/5-7.jpg">
-          </a>
-        </div>
+        </div>        
       </header>
 
       <div class="page-content">
@@ -37,6 +31,22 @@
 
 
       <a id="about"></a>
+      <div class="page-content">
+        <div class="home">
+            <div class="top card"                   
+            </div>            
+        </div>
+      </div>
+
+      <a id="exp"></a>
+      <div class="page-content">
+        <div class="home">
+            <div class="top card"                   
+            </div>            
+        </div>
+      </div>
+
+      <a id="edu"></a>
       <div class="page-content">
         <div class="home">
             <div class="top card"                   
