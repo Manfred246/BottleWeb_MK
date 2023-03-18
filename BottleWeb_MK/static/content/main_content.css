@@ -86,14 +86,6 @@ body {
     /* IE6-9 */
 }
 
-.card-panel {
-    transition: box-shadow .25s;
-    padding: 20px;
-    margin: 10px 0 20px 0;
-    border-radius: 2px;
-    background-color: #fff;
-}
-
 .card {
     margin: 10px 0 20px 0;
     background-color: #fff;
@@ -110,9 +102,9 @@ button,
     padding: 12px 12px;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #EF6C00;
-    font-weight: 500;
-    line-height: 1.3;
+    background: #FF4500;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
     .btn:hover,
