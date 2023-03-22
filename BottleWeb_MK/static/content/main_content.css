@@ -205,3 +205,9 @@ button,
     text-align ="center";
     font-size: 25px;
 }
+
+.main-title {
+    text-align"center";
+    font-size: 35px;
+    font-weight: bold;
+}
