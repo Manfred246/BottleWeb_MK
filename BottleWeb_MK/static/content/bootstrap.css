@@ -4398,9 +4398,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
-.navbar-default .navbar-text {
-  color: #777777;
-}
+    .navbar-default .navbar-text {
+        color: #777777;
+        font-size: 20px;
+        font-weight: bold;
+    }
 
 .navbar-default .navbar-nav > li > a {
   color: #777777;
