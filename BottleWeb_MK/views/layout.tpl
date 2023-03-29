@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/main_content.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/second_content.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 
@@ -19,18 +20,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a><img src="/static/images/logo_nav.png" class="navbar-brand" width="70px" height="60px"></a>
+                    <a><img href="/" src="/static/images/logo_nav.png" class="navbar-brand" width="70px" height="60px"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/home">Home</a></li>
-                        <li><a href="/about">Images</a></li>
+                        <li><a href="/image">Images</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-
-
 
         <div class="container body-content">
             {{!base}}    

@@ -14,7 +14,7 @@ def home():
         year=datetime.now().year
     )
 
-@route('/about')
+@route('/image')
 @view('about')
 def about():
     """Renders the about page."""
