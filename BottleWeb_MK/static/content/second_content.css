@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.z-depth-0 {
+    box-shadow: none !important;
+}
+
+.z-depth-1,
+.cardd-panel,
+.cardd,
+.site-header .header-badge {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-1-half {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-2 {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-3 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-4 {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-5,
+.site-header .header-badge:hover {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+html {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: #37474F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+.FrameMarg {
+    margin-top: 100px
+}
+
+/*setting up font sizes and base font family*/
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("https://klike.net/uploads/posts/2022-11/1669532184_7-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.outer {
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, #37474F));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00', GradientType=0);
+    /* IE6-9 */
+}
+
+.cardd {
+    margin: 10px 0 10px 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+/*Buttons/Components*/
+
+.btn,
+button,
+[type=submit] {
+    margin: 10px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #f3842f;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+    .btn:hover,
+    button:hover,
+    [type=submit]:hover {
+        -webkit-transition: all 60ms ease;
+        transition: all 60ms ease;
+        opacity: .85;
+    }
+
+    .btn:active,
+    button:active,
+    [type=submit]:active {
+        -webkit-transition: all 60ms ease;
+        transition: all 60ms ease;
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
+        opacity: .75;
+    }
+
+    .btn:focus,
+    button:focus,
+    [type=submit]:focus {
+        outline: none;
+    }
+
+/*Site Style*/
+
+.site-header {
+    text-align: center;
+}
+
+    .site-header .wrapper {
+        padding-top: 5em;
+        padding-bottom: 2em;
+    }
+
+        .site-header .wrapper .site-title {
+            text-decoration: none;
+            color: #fff;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    .site-header .header-badge {
+        border-radius: 50%;
+        border: 12px #fff solid;
+        height: 200px;
+        width: 200px;
+        background: url("https://clarkhacks.github.io/a/img/resume/download.svg") center center no-repeat #fff;
+        background-size: 50px 50px;
+        display: inline-block;
+        margin-bottom: -140px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+        .site-header .header-badge img {
+            /* Center the image within the element */
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+.page-content {
+    margin: 30px auto;
+    width: 980px;
+}
+
+    .page-content .top {
+        text-align: center;
+        padding: 30px 30px 30px;
+        border-radius: 10px;
+        color: #463B35;
+        background: #DADFE5;
+    }
+
+@media (max-width: 1050px) {
+    .page-content {
+        margin: 30px 2%;
+        width: 96%;
+    }
+}
+
+.wrapper {
+    display: block;
+    text-align: center;
+    color: #C3E7FF;
+    font-size: 2.6rem;
+    padding-bottom: 0.5em;
+    font-weight: 300;
+}
+
+.main-text {
+    text-align ="center";
+    font-size: 25px;
+}
+
+.main-title {
+    text-align "center";
+    font-size: 35px;
+    font-weight: bold;
+}
