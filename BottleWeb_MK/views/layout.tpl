@@ -10,55 +10,41 @@
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 
-<body>    
+<body>
     <div class="outer">
-      <header class="site-header">
-        <div class="wrapper">
-          <a class="site-title" href="#">QuokkaLand</a>
-          <div class="container noPrint">
-            <a href="#about" class="btn btn-danger">About</a>
-            <a href="#exp" class="btn btn-danger">Experience</a>
-            <a href="#edu" class="btn btn-danger">Education</a>
-            <a href="#contacts" class="btn btn-danger">Contacts</a>
-          </div>      
-        </div>        
-      </header>
-
-      <div class="page-content">
-        <div class="wrapper">            
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a><img src="/static/images/logo_nav.png" class="navbar-brand" width="70px" height="60px"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">Images</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>     
 
 
-      <a id="about"></a>
-      <div class="page-content">
-        <div class="home">
-            <div class="top card"                   
-            </div>            
+
+        <div class="container body-content">
+            {{!base}}    
+            <hr />
+            <footer>
+                <div class="wrapper">        
+                <p>&copy; {{ year }} - Matthew | Kate corp</p>
+                </div>
+            </footer>
         </div>
-      </div>
 
-      <a id="exp"></a>
-      <div class="page-content">
-        <div class="home">
-            <div class="top card"                   
-            </div>            
-        </div>
-      </div>
-
-      <a id="edu"></a>
-      <div class="page-content">
-        <div class="home">
-            <div class="top card"                   
-            </div>            
-        </div>
-      </div>
-
-      <a id="contacts"></a>
-      <div class="wrapper">
-        <hr />
-        <p>&copy; {{ year }} - Matthew | Kate corp</p>
-      </div>
+        <script src="/static/scripts/jquery-1.10.2.js"></script>
+        <script src="/static/scripts/bootstrap.js"></script>
+        <script src="/static/scripts/respond.js"></script>        
     </div>
 
 </body>

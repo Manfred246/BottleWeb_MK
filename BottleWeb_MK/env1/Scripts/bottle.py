@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!D:\ГУАП\MySite\BottleWeb_MK\env1\Scripts\python.exe
+=======
+#!D:\ГУАП\FinalVersionSite\BottleWeb_MK\env1\Scripts\python.exe
+>>>>>>> master
 # -*- coding: utf-8 -*-
 """
 Bottle is a fast and simple micro-framework for small web applications. It

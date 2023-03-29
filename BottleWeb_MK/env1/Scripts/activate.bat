@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=D:\ГУАП\MySite\BottleWeb_MK\env1
+=======
+set VIRTUAL_ENV=D:\ГУАП\FinalVersionSite\BottleWeb_MK\env1
+>>>>>>> master
 
 if not defined PROMPT set PROMPT=$P$G
 
