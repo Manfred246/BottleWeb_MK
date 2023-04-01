@@ -14,12 +14,12 @@ def home():
         year=datetime.now().year
     )
 
-@route('/about')
-@view('about')
+@route('/gallery')
+@view('gallery')
 def about():
     """Renders the about page."""
     return dict(
-        title='About',
+        title='gallery',
         message='Your application description page.',
         year=datetime.now().year
     )
