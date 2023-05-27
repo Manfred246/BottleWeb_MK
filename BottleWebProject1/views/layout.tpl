@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Bottle Application</title>
+    <title>{{ title }} - QuokkaLand</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/main_content.css">
@@ -15,10 +15,9 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                    
+                                       
                 </button>
-                <a><img href="/" src="/static/images/logo_nav.png" class="navbar-brand" width="70px" height="60px"></a>
+                <a><img href="/" src="/static/images/logo_nav.png" class="navbar-brand" width="80px" height="70px"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

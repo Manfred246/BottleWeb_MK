@@ -1,19 +1,19 @@
 % rebase('layout.tpl', title='Home Page', year=year)
 
 <div class="FrameMarg">
-    <header class="site-header" >
-    <div class="header-badge" margin-top="30px">          
+    <header class="site-header" height="30px">
+    <div class="header-badge" margin-top="50px">          
         <a data-toggle="modal"  data-target="#shareModal">
         <img height="100%" width="100" src="https://faunistics.com/wp-content/uploads/2022/02/5-7.jpg">          
     </div>
     <div class="wrapper">
         <a class="site-title" href="#">QuokkaLand</a>
         <div class="container noPrint">
-        <a href="#description" class="btn btn-danger">Description</a>
-        <a href="#disc" class="btn btn-danger">Discovery and name</a>
-        <a href="#ecology" class="btn btn-danger">Ecology</a>
-        <a href="#diet" class="btn btn-danger">Diet</a>
-        <a href="#population" class="btn btn-danger">Population</a>
+        <a href="#description" class="btn btn-warning">Description</a>
+        <a href="#disc" class="btn btn-warning">Discovery and name</a>
+        <a href="#ecology" class="btn btn-warning">Ecology</a>
+        <a href="#diet" class="btn btn-warning">Diet</a>
+        <a href="#population" class="btn btn-warning">Population</a>
         </div>      
     </div>       
     </header>
@@ -41,7 +41,7 @@
             <div class="top cardd"                   
             </div>         
         <p class="main-title">Dicovery and name</p>
-        <p class="main-text">The word "quokka" is originally derived from a Noongar word, which was probably gwaga. Today, the Noongar people refer to them as ban-gup, bungeup and quak –a.
+        <p class="main-text">The word "quokka" is originally derived from a Noongar word, which was probably gwaga. Today, the Noongar people refer to them as ban-gup, bungeup and quak ï¿½a.
 
     In 1658, Dutch mariner Samuel Volckertzoon wrote of sighting "a wild cat" on the island. In 1696, Dutch explorer Willem de Vlamingh mistook them for giant rats, and renamed the Wadjemup island 't Eylandt 't Rottenest, which means "the rat nest island" in Dutch.</p>
         </div>        
@@ -79,7 +79,7 @@
 
     An estimated 4,000 quokkas live on the mainland, with nearly all mainland populations being groups of fewer than 50, although one declining group of over 700 occurs in the southern forest between Nannup and Denmark. In 2015, an extensive bushfire near Northcliffe nearly eradicated one of the local mainland populations, with an estimated 90% of the 500 quokkas dying.
 
-    In 2007, the quokka population on Rottnest Island was estimated at between 8,000 and 12,000. Snakes are the quokka's only predator on the island. The population on smaller Bald Island, where the quokka has no predators, is 600–1,000. At the end of summer and into autumn, a seasonal decline of quokkas occurs on Rottnest Island, where loss of vegetation and reduction of available surface water can lead to starvation.
+    In 2007, the quokka population on Rottnest Island was estimated at between 8,000 and 12,000. Snakes are the quokka's only predator on the island. The population on smaller Bald Island, where the quokka has no predators, is 600ï¿½1,000. At the end of summer and into autumn, a seasonal decline of quokkas occurs on Rottnest Island, where loss of vegetation and reduction of available surface water can lead to starvation.
 
     This species saw the most significant decline from 1930 to the 1990s, when their distribution was reduced by over half. The quokka markedly declined in its abundance and distribution in the early 1930s, and this tendency has continued till today. Their presence on the mainland has declined to such an extent that they are only found in small groups in bushland surrounding Perth.
 
