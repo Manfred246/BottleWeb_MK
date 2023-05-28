@@ -11,20 +11,15 @@
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                       
-                </button>
-                <a><img href="/" src="/static/images/logo_nav.png" class="navbar-brand" width="80px" height="70px"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/gallery">Gallery</a></li>                    
-                </ul>
-            </div>
+    <div class="container main-nav">
+        <div class="navbar-header">
+            <a><img href="/" src="/static/images/logo_nav.png" class="navbar-brand" width="80px" height="70px"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/gallery">Gallery</a></li>                    
+            </ul>
         </div>
     </div>
 
@@ -34,8 +29,8 @@
             <hr />
             <footer>
                 <div class="wrapper"> 
-                    <p>&copy; {{ year }} - Matthew | Kate corp</p>
-                    </div>
+                    <p class="footer-text">&copy; {{ year }} - Matthew | Kate corp</p>
+                </div>
             </footer>
         </div>
     </div>
