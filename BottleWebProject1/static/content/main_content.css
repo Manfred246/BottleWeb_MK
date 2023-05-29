@@ -174,7 +174,15 @@ body {
     padding: 30px 30px 30px;
     border-radius: 30px;
     color: #463B35;
-    background: linear-gradient(70deg, var(--gradient-three), var(--gradient-four), var(--gradient-three));;
+    background: linear-gradient(70deg, var(--gradient-three), var(--gradient-four), var(--gradient-three));
+}
+
+.page-content .ttop {
+    text-align: left;
+    padding: 30px 30px 30px;
+    border-radius: 30px;
+    color: #463B35;
+    background: linear-gradient(70deg, var(--gradient-three), var(--gradient-four), var(--gradient-three));        
 }
 
 @media (max-width: 1050px) {

@@ -13,42 +13,32 @@
     </div>   
     
     <div class="page-content">
-        <div class="home">
-            <div class="top cardd"                   
-            </div>
+        <div class="top cardd">                   
             <img height="500px" class="round" src="https://cameralabs.org/media/k2/items/cache/21ea710723eeea511e81a2f196e8f87e_L.jpg"/>
-            </div>        
+        </div>        
     </div>     
 
     <div class="page-content">
-        <div class="home">
-            <div class="top cardd"                   
-            </div>
+        <div class="top cardd">                               
             <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_3.jpg"/>
-            </div>        
+        </div>        
     </div>
      
     <div class="page-content">
-    <div class="home">
-        <div class="top cardd"                   
-        </div>
-        <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_4.jpg"/>
+        <div class="top cardd">                   
+            <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_4.jpg"/>
         </div>        
     </div>      
 
     <div class="page-content">
-    <div class="home">
-        <div class="top cardd"                   
-        </div>
-        <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_6.jpg"/>
+        <div class="top cardd">                   
+            <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_6.jpg"/>
         </div>        
     </div>      
 
     <div class="page-content">
-    <div class="home">
-        <div class="top cardd"                   
-        </div>
-        <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_7.jpg"/>
+        <div class="top cardd">                   
+            <img height="500px" class="round" src="https://cameralabs.org/media/lab15/post/03-15/03/Selfi-s-kvokkoy_7.jpg"/>
         </div>        
     </div> 
 </div>
