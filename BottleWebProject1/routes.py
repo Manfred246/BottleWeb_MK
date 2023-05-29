@@ -33,3 +33,12 @@ def write():
         message='Your application description page.',
         year=datetime.now().year
     )
+
+@route('/reviews')
+@view('reviews')
+def review():
+    return dict(
+        title='reviews',
+        message='Your application description page.',
+        year=datetime.now().year
+    )

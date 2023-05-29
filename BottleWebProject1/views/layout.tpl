@@ -18,7 +18,9 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/home">Home</a></li>
-                <li><a href="/gallery">Gallery</a></li>                    
+                <li><a href="/gallery">Gallery</a></li>                
+                <li><a href="/writes">writes</a></li>
+                <li><a href="/reviews">reviews</a></li>
             </ul>
         </div>
     </div>
