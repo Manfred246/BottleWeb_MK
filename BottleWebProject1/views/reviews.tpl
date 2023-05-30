@@ -18,14 +18,20 @@
 			</div>
 		</div>
 		%if len(rev) != 0:
-			%for i in rev:
-				%for j in range(len(rev[i]['reviews'])):
-					<div class="page-content">
-						<div class="ttop cardd">			
-							<p class="main-title">{{ rev[i]['name'] }} ({{ list(rev.keys())[list(rev.values()).index(rev[i])] }})</p>
-							<p class="main-text">{{ rev[i]['reviews'][j] }}</p>											
-						</div>
-					</div>
+			%for i in range(int(count + 1)):
+				%if i != 0:
+					%for j in rev:
+						%for k in range(len(rev[j]['reviews'])):
+							%if rev[j]['num'][k] == i:
+								<div class="page-content">
+									<div class="ttop cardd">			
+										<p class="main-title">{{ rev[j]['name'] }} ({{ j }})</p>
+										<p class="main-text">{{ rev[j]['reviews'][k] }}</p>											
+									</div>
+								</div>
+							%end
+						%end
+					%end
 				%end
 			%end
 		%end
