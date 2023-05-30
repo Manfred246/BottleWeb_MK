@@ -44,7 +44,7 @@ def write():
     else:
         file = {}
 
-    # указание индекса отзыва
+    # указание индекса статьи
     num = 1
     for i in file:
         for j in file[i]['num']:
@@ -61,7 +61,7 @@ def write():
         if (len("%s" % txtTitle) > 0 and len("%s" % article) > 0 and len("%s" % author) > 0):
             # проверка на длину полей
             if (len("%s" % txtTitle) >= 4 and len("%s" % author) >= 4 and len(article) >= 10):
-                # проверка на существование почты в файле
+                # проверка на существование автора в файле
                 if (author in file):                                        
                     # проверка на дублирование статьи
                     if (article not in file[author]['article']):                                
