@@ -7,7 +7,7 @@
 		</div>
 	</header>
 
-	<form action="/reviews" method="post">
+	<form action="/writes" method="post">
 		<div class="page-content-small">
 			<div class="top cardd">
 				<p class="main-title">Write your article!</p>
@@ -40,5 +40,25 @@
 				<p><size="50">{{ message }}</p>
 			</div>
 		</div>
+
+		%if len(wr) != 0:
+			%for i in range(int(count + 1)):
+				%if i != 0:
+					%for j in wr:
+						%for k in range(len(wr[j]['title'])):
+							%if wr[j]['num'][k] == i:
+								<div class="page-content">
+									<div class="ttop cardd">			
+										<p class="main-title">{{ wr[j]['title'][k] }}</p>
+										<p class="main-text">{{ wr[j]['article'][k] }}</p>
+										<p calass="main-text">{{ j }}</p>
+									</div>
+								</div>
+							%end
+						%end
+					%end
+				%end
+			%end
+		%end
 	</form>
 </div>

@@ -1,3 +1,4 @@
+from turtle import title
 from bottle import request, post
 import re
 from datetime import datetime
@@ -30,15 +31,70 @@ def about():
         year=datetime.now().year
     )
 
+@post('/writes')
 @route('/writes')
 @view('writes')
 def write():
-    """Renders the about page."""
+    
+    # проверка на существование файла и на то, что он не пустой
+    if (os.path.isfile('writes.json') and os.stat('writes.json').st_size > 0):  
+        # считывание данных из файла json
+        with open('writes.json') as json_file:
+            file = json.load(json_file)
+    else:
+        file = {}
+
+    # указание индекса отзыва
+    num = 1
+    for i in file:
+        for j in file[i]['num']:
+            if (j > num):
+                num=j
+    # проверка нажатия на кнопку
+    if request.forms.get("BTNSEND") == "Send":
+        #считывание данных с формы
+        txtTitle = request.forms.get('TITLE')
+        article = request.forms.get('ARTICLE')
+        author = request.forms.get('AUTHOR')                
+
+        # проверка пустых полей
+        if (len("%s" % txtTitle) > 0 and len("%s" % article) > 0 and len("%s" % author) > 0):
+            # проверка на длину полей
+            if (len("%s" % txtTitle) >= 4 and len("%s" % author) >= 4 and len(article) >= 10):
+                # проверка на существование почты в файле
+                if (author in file):                                        
+                    # проверка на дублирование статьи
+                    if (article not in file[author]['article']):                                
+                        # добавление к файлу
+                        num += 1
+                        file[author]['title'].append(title)
+                        file[author]['article'].append(article)                        
+                        file[author]['num'].append(num)
+                        with open('writes.json', 'w') as outfile:
+                            json.dump(file, outfile, indent=4)
+                        mes = 'The article has been published'
+                    else:
+                        mes = 'Error! You have already left this article before!'                    
+                else:
+                    # создание новой записи в файле
+                    num += 1
+                    file[author] = {'title': [txtTitle], 'article':[article], 'num':[num]}
+                    with open('writes.json', 'w') as outfile:
+                        json.dump(file, outfile, indent=4)
+                    mes = 'The article has been published'
+            else:
+                mes = 'Error! the length of the title must be at least 4 characters, the author\'s name must contain at least 4 characters, and the article must be at least 10 characters!'
+        else:
+            mes = 'Error! Input fields cannot be empty!'
+    else:
+        mes = ''
+
     return dict(
         title='writes',
-        message='Your application description page.',
-        year=datetime.now().year
-    )
+        message=mes,
+        year=datetime.now().year,
+        wr=file,
+        count=num)
 
 @post('/reviews')
 @route('/reviews')
