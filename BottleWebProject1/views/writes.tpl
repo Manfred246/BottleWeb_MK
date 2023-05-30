@@ -11,9 +11,9 @@
 		<div class="page-content-small">
 			<div class="top cardd">
 				<p class="main-title">Write your article!</p>
-				<p><input type="text" size="50" name="USERNAME" placeholder="* Article title *"></input></p>
-				<p><textarea class="TAcon" rows="2" cols="50" name="REVIEW" placeholder="Your article"></textarea></p>
-				<p><input type="text" size="50" name="ADRESS" placeholder="Article author"></input></p>
+				<p><input type="text" size="50" name="TITLE" placeholder="* Article title *"></input></p>
+				<p><textarea class="TAcon" rows="2" cols="50" name="ARTICLE" placeholder="Your article"></textarea></p>
+				<p><input type="text" size="50" name="AUTHOR" placeholder="Article author"></input></p>
 
 				<svg width="160" height="32" viewBox="0 0 160 32">
 				  <defs>
