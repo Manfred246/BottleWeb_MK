@@ -1,0 +1,15 @@
+{
+    "manfred@mail.ru": {
+        "name": "Manfred",
+        "reviews": [
+            "A cool website with a beautiful design, I really liked the gallery with pictures",
+            "It was very interesting to read the information about the animal on the main page"
+        ]
+    },
+    "sirsarra@yooho.com": {
+        "name": "Sarra",
+        "reviews": [
+            "Very cute animals, I've always wanted to meet them. After visiting this site, I wanted to do it even more."
+        ]
+    }
+}

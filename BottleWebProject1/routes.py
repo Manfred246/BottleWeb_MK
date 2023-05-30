@@ -43,7 +43,7 @@ def write():
 @post('/reviews')
 @route('/reviews')
 @view('reviews')
-def review():    
+def review():        
     # проверка на существование файла и на то, что он не пустой
     if (os.path.isfile('reviews.json') and os.stat('reviews.json').st_size > 0):  
         # считывание данных из файла json
@@ -53,27 +53,27 @@ def review():
         file = {}
     
     # проверка нажатия на кнопку
-    if request.forms.get("reviews_btn") == "Send":
+    if request.forms.get("BTNSEND") == "Send":
         # считывание данных с формы
         reviewTXT = request.forms.get('REVIEW')
         username = request.forms.get('USERNAME')
         mail = request.forms.get('ADRESS')
         
         # проверка пустых полей
-        if (len("%" % reviewTXT) > 0 and len("%" % username) > 0 and len("%" % mail) > 0):            
+        if (len("%s" % reviewTXT) > 0 and len("%s" % username) > 0 and len("%s" % mail) > 0):            
             # проверка на длину полей
-            if (len("%" % reviewTXT) >= 6 and len("%" % username) >= 4):
+            if (len("%s" % reviewTXT) >= 6 and len("%s" % username) >= 4):
                 # проверка корректности почты
                 if (EMAIL_REGEX.match(mail)):          
                     # проверка на существование почты в файле
                     if (mail in file):                 
                         # проверка на соответствие никнейма
-                        if (username in file[mail]):        
+                        if (username in file[mail]['name']):        
                             # проверка на дублирование отзыва
                             if (reviewTXT not in file[mail]):        
                                 # добавление записи к файлу
-                                file[mail]['REVIEWS'].append(reviewTXT)
-                                with open('reviews.json') as outfile:
+                                file[mail]['reviews'].append(reviewTXT)
+                                with open('reviews.json', 'w') as outfile:
                                     json.dump(file, outfile, indent=4)
                                 return dict(
                                     title='reviews',
@@ -94,8 +94,8 @@ def review():
                                 rev = file)
                     else:                        
                         # создание новой записи в файле
-                        file[mail] = {'NAME' : username, 'REVIEWS' : reviewTXT}    
-                        with open('reviews.json') as outfile:
+                        file[mail] = {'name': username, 'reviews': [reviewTXT]}    
+                        with open('reviews.json', 'w') as outfile:
                             json.dump(file, outfile, indent=4)
                         return dict(
                             title='reviews',
