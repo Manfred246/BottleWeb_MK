@@ -10,12 +10,7 @@
 	<form action="/writes" method="post">
 		<div class="page-content-small">
 			<div class="top cardd">
-				<p class="main-title">Write your article!</p>
-				<p><input type="text" size="50" name="TITLE" placeholder="* Article title *"></input></p>
-				<p><textarea class="TAcon" rows="2" cols="50" name="ARTICLE" placeholder="Your article"></textarea></p>
-				<p><input type="text" size="50" name="AUTHOR" placeholder="Article author"></input></p>
-
-				<svg width="160" height="32" viewBox="0 0 160 32">
+			<svg width="160" height="32" viewBox="0 0 160 32">
 				  <defs>
 					<mask id="perc">
 					  <rect x="0" y="0" width="100%" height="100%" fill="white" />
@@ -36,7 +31,14 @@
 				  <use xlink:href="#stars" fill="#E0A129" stroke="black" mask="url(#perc)"></use>
 				</svg>
 
-				<p><button name="BTNSEND" type="submit" value="Send">Send</button></p>
+				<p class="main-title">Write your article!</p>
+				<p><input type="text" size="50" name="TITLE" placeholder="♡ Article title ♡"></input></p>
+				<p><textarea class="TAcon" rows="2" cols="50" name="ARTICLE" placeholder="(ﾉ´ з `)ノ Your article"></textarea></p>
+				<p><input type="text" size="50" name="AUTHOR" placeholder="♡ Article author ♡"></input></p>
+
+				
+
+				<p><button class="btn btn-warning-new" name="BTNSEND" type="submit" value="Send">Send</button></p>
 				<p><size="50">{{ message }}</p>
 			</div>
 		</div>

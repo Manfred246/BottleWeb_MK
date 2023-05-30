@@ -10,10 +10,10 @@
 	<form action="/reviews" method="post">
 		<div class="page-content-small">
 			<div class="top cardd">
-				<p><textarea class="TAcon" rows="2" cols="50" name="REVIEW" placeholder="Your review"></textarea></p>
+				<p><textarea class="TAcon" cols="50" name="REVIEW" placeholder="Your review"></textarea></p>
 				<p><input type="text" size="50" name="USERNAME" placeholder="Your nickname"></input></p>
 				<p><input type="text" size="50" name="ADRESS" placeholder="Your email"></input></p>
-				<p><button name="BTNSEND" type="submit" value="Send">Send</button></p>
+				<p><button class="btn btn-warning-new" name="BTNSEND" type="submit" value="Send">Send</button></p>
 				<p><size="50">{{ message }}</p>
 			</div>
 		</div>
