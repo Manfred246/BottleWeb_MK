@@ -8,7 +8,7 @@
 	</header>
 
 	<form action="/reviews" method="post">
-		<div class="page-content">
+		<div class="page-content-small">
 			<div class="top cardd">
 				<p><textarea class="TAcon" rows="2" cols="50" name="REVIEW" placeholder="Your review"></textarea></p>
 				<p><input type="text" size="50" name="USERNAME" placeholder="Your nickname"></input></p>

@@ -15,12 +15,12 @@
         <div class="navbar-header">
             <a><img href="/" src="/static/images/logo_nav.png" class="navbar-brand" width="80px" height="70px"></a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
             <ul class="nav navbar-nav">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/gallery">Gallery</a></li>                
-                <li><a href="/writes">Articles</a></li>
-                <li><a href="/reviews">Reviews</a></li>
+                <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/gallery" class="nav-link">Gallery</a></li>                
+                <li class="nav-item"><a href="/writes" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="/reviews" class="nav-link">Reviews</a></li>
             </ul>
         </div>
     </div>
@@ -30,7 +30,7 @@
             {{!base}}
             <hr />
             <footer>
-                <div class="wrapper"> 
+                <div class="wrapper site-header"> 
                     <p class="footer-text">&copy; {{ year }} - Matthew | Kate corp</p>
                 </div>
             </footer>

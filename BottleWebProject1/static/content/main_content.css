@@ -257,3 +257,9 @@ body {
 .about img {
     display: block;
 }
+
+.nav > li > a:hover, .nav > li > a:focus {
+    color: rgb(224, 161, 41);
+    text-decoration: none;
+    background-color: transparent;
+}
