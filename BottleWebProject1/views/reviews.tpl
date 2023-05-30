@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title=title, message=message, year=year)
+% rebase('layout.tpl', title='Reviews', year=year)
 
 <div>
 	<header class="site-header">

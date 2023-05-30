@@ -107,10 +107,11 @@ body {
 }
 
 .cardd {
-    margin: 10px 0 10px 0;
+    margin: 10px 10px 10px 10px;
     background-color: #fff;
     transition: box-shadow .25s;
     border-radius: 2px;
+    justify-items:center;
 }
 
 .btn {
@@ -219,4 +220,40 @@ body {
 
 .header-gallery {
     margin-top: 200px;
+}
+
+.page-content-small {
+    margin: 30px auto;
+    width: 550px;
+}
+
+    .page-content-small .top {
+        text-align: center;
+        padding: 30px 30px 30px;
+        border-radius: 30px;
+        color: #463B35;
+        background: linear-gradient(70deg, var(--gradient-three), var(--gradient-four), var(--gradient-three));
+    }
+
+    .page-content-small .ttop {
+        text-align: left;
+        padding: 30px 30px 30px;
+        border-radius: 30px;
+        color: #463B35;
+        background: linear-gradient(70deg, var(--gradient-three), var(--gradient-four), var(--gradient-three));
+    }
+
+@media (max-width: 1050px) {
+    .page-content-small {
+        margin: 30px 5%;
+        width: 100%;
+    }
+}
+
+.about {
+    display: inline-block;
+}
+
+.about img {
+    display: block;
 }
