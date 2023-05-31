@@ -3,11 +3,13 @@
         "name": "Manfred",
         "reviews": [
             "A cool website with a beautiful design, I really liked the gallery with pictures",
-            "It was very interesting to read the information about the animal on the main page"
+            "It was very interesting to read the information about the animal on the main page",
+            "Hello world"
         ],
         "num": [
             1,
-            3
+            3,
+            4
         ]
     },
     "sirsarra@yooho.com": {

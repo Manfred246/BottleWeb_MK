@@ -17,23 +17,28 @@
 				<p><size="50">{{ message }}</p>
 			</div>
 		</div>
+		%mass = []
 		%if len(rev) != 0:
 			%for i in range(int(count + 1)):
 				%if i != 0:
 					%for j in rev:
 						%for k in range(len(rev[j]['reviews'])):
 							%if rev[j]['num'][k] == i:
-								<div class="page-content">
-									<div class="ttop cardd">			
-										<p class="main-title">{{ rev[j]['name'] }} ({{ j }})</p>
-										<p class="main-text">{{ rev[j]['reviews'][k] }}</p>											
-									</div>
-								</div>
+								%mass.append([rev[j]['name'], j, rev[j]['reviews'][k]])								
 							%end
 						%end
 					%end
 				%end
 			%end
+		%end
+		
+		%for i in reversed(mass):
+			<div class="page-content">
+				<div class="ttop cardd">			
+					<p class="main-title">{{ i[0] }} ({{ i[1] }})</p>
+					<p class="main-text">{{ i[2] }}</p>											
+				</div>
+			</div>
 		%end
 	</form>
 </div>
