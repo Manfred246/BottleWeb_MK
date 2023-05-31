@@ -33,8 +33,12 @@
   <ItemGroup>
     <Compile Include="app.py" />
     <Compile Include="routes.py" />
+    <Compile Include="utests\tests_Reviews.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="utests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
