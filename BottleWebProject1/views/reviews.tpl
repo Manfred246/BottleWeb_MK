@@ -36,7 +36,7 @@
 			<div class="page-content">
 				<div class="ttop cardd">			
 					<p class="main-title">{{ i[0] }} ({{ i[1] }})</p>
-					<p class="main-text review-text">{{ i[2] }}</p>
+					<p class="main-text val-text">{{ i[2] }}</p>
 					<p class="main-text text-right">{{ i[3] }}</p>
 				</div>
 			</div>
