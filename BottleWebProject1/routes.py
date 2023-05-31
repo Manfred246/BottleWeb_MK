@@ -62,8 +62,7 @@ def write():
             # проверка на длину полей
             if (len("%s" % txtTitle) >= 4 and len("%s" % author) >= 4 and len(article) >= 10):
                 # проверка на существование автора в файле
-                if (author in file):  
-                    author = "✧" + author + "✧";
+                if (author in file):                                        
                     # проверка на дублирование статьи
                     if (article not in file[author]['article']):                                
                         # добавление к файлу
