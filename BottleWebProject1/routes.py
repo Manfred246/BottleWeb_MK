@@ -170,5 +170,5 @@ def review():
         rev=file,
         count=num)
 
-
+#NAME_REGEX = re.compile(r"^[]")
 EMAIL_REGEX = re.compile(r"^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$")

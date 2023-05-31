@@ -198,6 +198,12 @@ body {
     color: #463B35;
 }
 
+.review-text {
+    font-size: 20px;
+    color: #463B35;
+    white-space: normal;
+}
+
 .main-title {
     font-size: 30px;
     font-weight: bold;
