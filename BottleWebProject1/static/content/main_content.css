@@ -199,9 +199,8 @@ body {
 }
 
 .review-text {
-    font-size: 20px;
-    color: #463B35;
-    white-space: normal;
+    word-wrap:break-word;
+    white-space: pre-line;
 }
 
 .main-title {
