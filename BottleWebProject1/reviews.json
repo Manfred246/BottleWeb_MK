@@ -3,12 +3,14 @@
         "name": "Manfred",
         "reviews": [
             "A cool website with a beautiful design, I really liked the gallery with pictures",
-            "It was very interesting to read the information about the animal on the main page",
-            "Hello world"
+            "It was very interesting to read the information about the animal on the main page"
+        ],
+        "date": [
+            "31 May 2023",
+            "31 May 2023"
         ],
         "num": [
-            1,
-            3,
+            2,
             4
         ]
     },
@@ -17,8 +19,11 @@
         "reviews": [
             "Very cute animals, I've always wanted to meet them. After visiting this site, I wanted to do it even more."
         ],
+        "date": [
+            "31 May 2023"
+        ],
         "num": [
-            2
+            3
         ]
     }
 }

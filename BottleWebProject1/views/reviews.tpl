@@ -24,7 +24,7 @@
 					%for j in rev:
 						%for k in range(len(rev[j]['reviews'])):
 							%if rev[j]['num'][k] == i:
-								%mass.append([rev[j]['name'], j, rev[j]['reviews'][k]])								
+								%mass.append([rev[j]['name'], j, rev[j]['reviews'][k], rev[j]['date'][k]])								
 							%end
 						%end
 					%end
@@ -36,7 +36,8 @@
 			<div class="page-content">
 				<div class="ttop cardd">			
 					<p class="main-title">{{ i[0] }} ({{ i[1] }})</p>
-					<p class="main-text">{{ i[2] }}</p>											
+					<p class="main-text">{{ i[2] }}</p>
+					<p class="main-text text-right">{{ i[3] }}</p>
 				</div>
 			</div>
 		%end

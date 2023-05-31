@@ -139,6 +139,7 @@ def review():
                                 num += 1
                                 file[mail]['reviews'].append(reviewTXT)
                                 file[mail]['num'].append(num)
+                                file[mail]['date'].append(datetime.now().strftime("%d %b %Y"))
                                 with open('reviews.json', 'w') as outfile:
                                     json.dump(file, outfile, indent=4)
                                 mes = 'Thank you for your feedback'
@@ -149,7 +150,7 @@ def review():
                     else:
                         # создание новой записи в файле
                         num += 1
-                        file[mail] = {'name': username, 'reviews':[reviewTXT], 'num':[num]}
+                        file[mail] = {'name': username, 'reviews':[reviewTXT], 'date':[datetime.now().strftime("%d %b %Y")], 'num':[num]}
                         with open('reviews.json', 'w') as outfile:
                             json.dump(file, outfile, indent=4)
                         mes = 'Thank you for your feedback'
