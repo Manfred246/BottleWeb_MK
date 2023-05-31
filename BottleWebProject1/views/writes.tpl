@@ -43,24 +43,29 @@
 			</div>
 		</div>
 
+		%mas = []
 		%if len(wr) != 0:
 			%for i in range(int(count + 1)):
 				%if i != 0:
 					%for j in wr:
 						%for k in range(len(wr[j]['title'])):
 							%if wr[j]['num'][k] == i:
-								<div class="page-content">
-									<div class="ttop cardd">			
-										<p class="main-title">{{ wr[j]['title'][k] }}</p>
-										<p class="main-text">{{ wr[j]['article'][k] }}</p>
-										<p calass="main-text">{{ j }}</p>
-									</div>
-								</div>
+								%mas.append([wr[j]['title'][k], wr[j]['article'][k], j, wr[j]['date'][k]])
 							%end
 						%end
 					%end
 				%end
 			%end
 		%end
+
+		%for i in reversed(mas):
+			<div class="page-content">
+				<div class="ttop cardd">			
+					<p class="main-title">{{ i[0] }}</p>
+					<p class="main-text">{{ i[1] }}</p>
+					<p calass="main-text">{{ i[2] }} - {{ i[3] }}</p>
+				</div>
+			</div>
+		%end		
 	</form>
 </div>

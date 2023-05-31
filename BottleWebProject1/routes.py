@@ -68,7 +68,8 @@ def write():
                         # добавление к файлу
                         num += 1
                         file[author]['title'].append(title)
-                        file[author]['article'].append(article)                        
+                        file[author]['article'].append(article)
+                        file[author]['date'].append(datetime.now().strftime("%d %b %Y"))
                         file[author]['num'].append(num)
                         with open('writes.json', 'w') as outfile:
                             json.dump(file, outfile, indent=4)
@@ -78,7 +79,7 @@ def write():
                 else:
                     # создание новой записи в файле
                     num += 1
-                    file[author] = {'title': [txtTitle], 'article':[article], 'num':[num]}
+                    file[author] = {'title': [txtTitle], 'article':[article], 'date': [datetime.now().strftime("%d %b %Y")], 'num': [num]}
                     with open('writes.json', 'w') as outfile:
                         json.dump(file, outfile, indent=4)
                     mes = 'The article has been published'
