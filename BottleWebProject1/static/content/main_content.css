@@ -299,7 +299,7 @@ input {
     box-shadow: 3px 3px 3px #999;
 }
 
-text-right {
-    font-size: 50px;
-    color: #463B35;
+.text-right {
+    text-align: right;
+    font-weight: bolder;
 }

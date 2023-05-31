@@ -63,7 +63,7 @@
 				<div class="ttop cardd">			
 					<p class="main-title">{{ i[0] }}</p>
 					<p class="main-text">{{ i[1] }}</p>
-					<p calass="main-text">{{ i[2] }} - {{ i[3] }}</p>
+					<p class="main-text text-right">{{ i[2] }} - {{ i[3] }}</p>
 				</div>
 			</div>
 		%end		
