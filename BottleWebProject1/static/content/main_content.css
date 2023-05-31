@@ -194,13 +194,11 @@ body {
 }
 
 .main-text {
-    text-align ="center";
     font-size: 20px;
     color: #463B35;
 }
 
 .main-title {
-    text-align "center";
     font-size: 30px;
     font-weight: bold;
     color: #463B35;
@@ -299,4 +297,9 @@ input {
     font-size: 20px;
     width: 150px;
     box-shadow: 3px 3px 3px #999;
+}
+
+text-right {
+    font-size: 50px;
+    color: #463B35;
 }
