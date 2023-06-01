@@ -1,7 +1,7 @@
 % rebase('layout.tpl', title='Home', year=year)
 
 <div>
-    <header class="site-header" height="30px">
+    <header class="site-header" id="top" height="30px">
     <div class="header-badge" margin-top="50px">          
         <a data-toggle="modal"  data-target="#shareModal">
         <img height="100%" width="100" src="https://faunistics.com/wp-content/uploads/2022/02/5-7.jpg">          
@@ -24,7 +24,8 @@
             <p class="main-title">Description</p>
             <p class="main-text">The quokka is a small macropod about the size of a domestic cat. It is the only member of the genus Setonix. Like other marsupials in the macropod family (such as kangaroos and wallabies), the quokka is herbivorous and mainly nocturnal.</p>
             <p class="main-text">Quokkas are found on some smaller islands off the coast of Western Australia, particularly Rottnest Island just off Perth and Bald Island near Albany. Isolated, scattered populations also exist in forest and coastal heath between Perth and Albany. A small colony inhabits a protected area of Two Peoples Bay Nature Reserve, where they co-exist with the critically endangered Gilbert's potoroo.</p>
-            <img height="500px" class="round" src="https://avatars.dzeninfra.ru/get-zen_doc/1577780/pub_5dfcbc59e6cb9b00b1817a73_5dfcbca843fdc000adb499da/scale_1200"/>
+            <img height="500px" class="round" src="https://avatars.dzeninfra.ru/get-zen_doc/1577780/pub_5dfcbc59e6cb9b00b1817a73_5dfcbca843fdc000adb499da/scale_1200"/><br>
+            <a href="#top" class="btn btn-warning">Back</a>
         </div>        
     </div>     
 
@@ -34,7 +35,8 @@
             <p class="main-title">Dicovery and name</p>
             <p class="main-text">The word "quokka" is originally derived from a Noongar word, which was probably gwaga. Today, the Noongar people refer to them as ban-gup, bungeup and quakka.</p>
             <p class="main-text">In 1658, Dutch mariner Samuel Volckertzoon wrote of sighting "a wild cat" on the island. In 1696, Dutch explorer Willem de Vlamingh mistook them for giant rats, and renamed the Wadjemup island 't Eylandt 't Rottenest, which means "the rat nest island" in Dutch.</p>
-            <img height="500px" class="round" src="https://cdn-st1.rtr-vesti.ru/vh/pictures/xw/411/164/4.jpg"/>
+            <img height="500px" class="round" src="https://cdn-st1.rtr-vesti.ru/vh/pictures/xw/411/164/4.jpg"/><br>
+            <a href="#top" class="btn btn-warning">Back</a>
         </div>        
     </div>
      
@@ -43,7 +45,8 @@
         <div class="top cardd">                         
             <p class="main-title">Ecology</p>
             <p class="main-text">During the Pleistocene period, quokkas were more abundant and living on open landscapes. When the Europeans arrived in Australia, they introduced new species, some of which became predators to the quokkas. This caused the habitats of quokkas to eventually shift to islands and forests, where there were minimal predators and more vegetation. In the wild, the quokka's roaming is restricted to a very small range in the South West of Western Australia, with a number of small scattered populations. One large population exists on Rottnest Island and a smaller population is on Bald Island near Albany. The islands are free of certain predators such as red foxes and cats. On Rottnest, quokkas are common and occupy a variety of habitats, ranging from semiarid scrub to cultivated gardens. Prickly Acanthocarpus plants, which are unaccommodating for humans and other relatively large animals to walk through, provide their favorite daytime shelter for sleeping. Additionally, they are known for their ability to climb trees.</p>
-            <img height="500px" class="round" src="https://givnost.ru/wp-content/uploads/2019/07/kvokka-zhivotnoe-opisanie-osobennosti-vidy-obraz-zhizni-i-sreda-obitaniya-kvokki-2.jpeg"/>
+            <img height="500px" class="round" src="https://givnost.ru/wp-content/uploads/2019/07/kvokka-zhivotnoe-opisanie-osobennosti-vidy-obraz-zhizni-i-sreda-obitaniya-kvokki-2.jpeg"/><br>
+            <a href="#top" class="btn btn-warning">Back</a>
         </div>        
     </div>      
 
@@ -52,7 +55,8 @@
         <div class="top cardd">                     
             <p class="main-title">Diet</p>
             <p class="main-text">Like most macropods, quokkas eat many types of vegetation, including grasses, sedges and leaves. A study found that Guichenotia ledifolia, a small shrub species of the family Malvaceae, is one of the quokka's favoured foods. Rottnest Island visitors are urged to never feed quokkas, in part because eating "human food" such as chips can cause dehydration and malnourishment, both of which are detrimental to the quokka's health. Despite the relative lack of fresh water on Rottnest Island, quokkas do have high water requirements, which they satisfy mostly through eating vegetation. On the mainland, quokkas only live in areas that have 600 mm (24 in) or more of rain per year. The quokkas chew their cud, similar to cows.</p>
-            <img height="500px" class="round" src="https://givnost.ru/wp-content/uploads/2019/07/kvokka-zhivotnoe-opisanie-osobennosti-vidy-obraz-zhizni-i-sreda-obitaniya-kvokki-6.jpg"/>
+            <img height="500px" class="round" src="https://givnost.ru/wp-content/uploads/2019/07/kvokka-zhivotnoe-opisanie-osobennosti-vidy-obraz-zhizni-i-sreda-obitaniya-kvokki-6.jpg"/><br>
+            <a href="#top" class="btn btn-warning">Back</a>
         </div>        
     </div>      
 
@@ -67,6 +71,7 @@
             <p class="main-text">In 2007, the quokka population on Rottnest Island was estimated at between 8,000 and 12,000. Snakes are the quokka's only predator on the island. The population on smaller Bald Island, where the quokka has no predators, is 600 1,000. At the end of summer and into autumn, a seasonal decline of quokkas occurs on Rottnest Island, where loss of vegetation and reduction of available surface water can lead to starvation.</p>
             <p class="main-text">This species saw the most significant decline from 1930 to the 1990s, when their distribution was reduced by over half. The quokka markedly declined in its abundance and distribution in the early 1930s, and this tendency has continued till today. Their presence on the mainland has declined to such an extent that they are only found in small groups in bushland surrounding Perth.</p>
             <p class="main-text">The quokka is now listed as vulnerable in accordance with the IUCN criteria.</p>
+            <a href="#top" class="btn btn-warning">Back</a>
         </div>
     </div> 
 </div>
