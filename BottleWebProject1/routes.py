@@ -55,10 +55,11 @@ def write():
         #считывание данных с формы
         txtTitle = request.forms.get('TITLE')
         article = request.forms.get('ARTICLE')
-        author = request.forms.get('AUTHOR')                
+        author = request.forms.get('AUTHOR')        
+        imageLink = request.forms.get('IMAGE')
 
         # проверка пустых полей
-        if (len("%s" % txtTitle) > 0 and len("%s" % article) > 0 and len("%s" % author) > 0):
+        if (len("%s" % txtTitle) > 0 and len("%s" % article) > 0 and len("%s" % author) > 0 and len("%s" % imageLink) > 0):
             # проверка на длину полей
             if (len("%s" % txtTitle) >= 4 and len("%s" % author) >= 4 and len(article) >= 10):
                 # проверка на существование автора в файле
@@ -70,6 +71,7 @@ def write():
                         num += 1
                         file[author]['title'].append(title)
                         file[author]['article'].append(article)
+                        file[author]['image'].append(imageLink)
                         file[author]['date'].append(datetime.now().strftime("%d %b %Y"))
                         file[author]['num'].append(num)
                         with open('writes.json', 'w') as outfile:
@@ -80,7 +82,7 @@ def write():
                 else:
                     # создание новой записи в файле
                     num += 1
-                    file[author] = {'title': [txtTitle], 'article':[article], 'date': [datetime.now().strftime("%d %b %Y")], 'num': [num]}
+                    file[author] = {'title': [txtTitle], 'article':[article], 'image':[imageLink], 'date': [datetime.now().strftime("%d %b %Y")], 'num': [num]}
                     with open('writes.json', 'w') as outfile:
                         json.dump(file, outfile, indent=4)
                     mes = 'The article has been published'

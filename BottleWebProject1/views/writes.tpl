@@ -53,23 +53,12 @@
 			</svg>
 				<p class="main-title">Write your article!</p>
 				<p><input type="text" size="50" name="TITLE" placeholder="♡ Article title ♡"></input></p>
-				<p><input type="text" size="50" name="AUTHOR" placeholder="- image link -"></input></p>
+				<p><input type="text" size="50" name="IMAGE" placeholder="- image link -"></input></p>
 				<p><textarea class="TAcon" rows="2" cols="50" name="ARTICLE" placeholder="(ﾉ´ з `)ノ Your article"></textarea></p>
 				<p><input type="text" size="50" name="AUTHOR" placeholder="♡ Article author ♡"></input></p>
 				<p><button class="btn btn-warning-new" name="BTNSEND" type="submit" value="Send">Send</button></p>
 			</div>
-		</div>
-
-		<div class="page-content-small about">
-			<div class="top cardd mt-25000">
-				<p class="main-title">List of Articles</p>
-				<img height="425px" class="round-new" src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQPjutZ9txmd5DBd_DK_pLRo5eMWVHq5MpZBgAxYi6EGXfdv2cj53_zbNR8VZH932q9"/>
-				<select>
-					<option >Title 1</option>
-					<option >Title 2</option>
-				</select>
-			</div>
-		</div>
+		</div>		
 
 		%mas = []
 		%if len(wr) != 0:
@@ -78,7 +67,7 @@
 					%for j in wr:
 						%for k in range(len(wr[j]['title'])):
 							%if wr[j]['num'][k] == i:
-								%mas.append([wr[j]['title'][k], wr[j]['article'][k], j, wr[j]['date'][k]])
+								%mas.append([wr[j]['title'][k], wr[j]['article'][k], j, wr[j]['date'][k], wr[j]['image'][k], wr[j]['num'][k]])
 							%end
 						%end
 					%end
@@ -86,11 +75,22 @@
 			%end
 		%end
 
+		<div class="page-content-small about">
+			<div class="top cardd mt-25000">
+				<p class="main-title">List of Articles</p>
+				%for i in reversed(mas):								
+					<a href="#{{i[5]}}" class="btn btn-warning">{{ i[0] }}</a>
+				%end
+			</div>
+		</div>
+
 		%for i in reversed(mas):
+			<a id= {{ i[5] }}></a>
 			<div class="page-content">
 				<div class="ttop cardd">			
 					<p class="main-title">{{ i[0] }}</p>
-					<p class="main-text val-text">{{ i[1] }}</p>
+					<image height="500px" class="round" src= {{ i[4] }}/></br>
+					<p class="main-text val-text">{{ i[1] }}</p>					
 					<p class="main-text text-right">{{ i[2] }} - {{ i[3] }}</p>
 				</div>
 			</div>
