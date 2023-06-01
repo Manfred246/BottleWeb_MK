@@ -1,5 +1,21 @@
 % rebase('layout.tpl', title='Articles', year=year)
 
+ <script>
+ const styledSwal = Swal.mixin({
+    background: 'linear-gradient(180deg, var(--gradient-four), var(--gradient-three), var(--gradient-one))',
+    customClass: {
+        confirmButton: 'btn btn-warning'
+    },
+    buttonsStyling: false
+});
+
+ % if message != '':
+
+    styledSwal.fire('{{message}}');
+
+% end
+ </script>
+
 <div>
 	<header class="site-header">
 		<div class="wrapper header-gallery">
@@ -35,11 +51,8 @@
 				<p><input type="text" size="50" name="TITLE" placeholder="♡ Article title ♡"></input></p>
 				<p><textarea class="TAcon" rows="2" cols="50" name="ARTICLE" placeholder="(ﾉ´ з `)ノ Your article"></textarea></p>
 				<p><input type="text" size="50" name="AUTHOR" placeholder="♡ Article author ♡"></input></p>
-
-				
-
 				<p><button class="btn btn-warning-new" name="BTNSEND" type="submit" value="Send">Send</button></p>
-				<p><size="50">{{ message }}</p>
+
 			</div>
 		</div>
 

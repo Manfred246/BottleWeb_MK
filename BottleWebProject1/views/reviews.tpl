@@ -1,5 +1,21 @@
 % rebase('layout.tpl', title='Reviews', year=year)
 
+<script>
+ const styledSwal = Swal.mixin({
+    background: 'linear-gradient(180deg, var(--gradient-four), var(--gradient-three), var(--gradient-one))',
+    customClass: {
+        confirmButton: 'btn btn-warning'
+    },
+    buttonsStyling: false
+});
+
+ % if message != '':
+
+    styledSwal.fire('{{message}}');
+
+% end
+ </script>
+
 <div>
 	<header class="site-header">
 		<div class="wrapper header-gallery">
@@ -14,7 +30,6 @@
 				<p><input type="text" size="50" name="USERNAME" placeholder="Your nickname"></input></p>
 				<p><input type="text" size="50" name="ADRESS" placeholder="Your email"></input></p>
 				<p><button class="btn btn-warning-new" name="BTNSEND" type="submit" value="Send">Send</button></p>
-				<p><size="50">{{ message }}</p>
 			</div>
 		</div>
 		%mass = []
