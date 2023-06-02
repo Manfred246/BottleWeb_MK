@@ -78,9 +78,12 @@
 		<div class="page-content-small about">
 			<div class="top cardd mt-25000">
 				<p class="main-title">List of Articles</p>
-				%for i in reversed(mas):								
-					<a href="#{{i[5]}}" class="btn btn-warning">{{ i[0] }}</a>
-				%end
+				<img height="425px" class="round-new" src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQPjutZ9txmd5DBd_DK_pLRo5eMWVHq5MpZBgAxYi6EGXfdv2cj53_zbNR8VZH932q9"/>
+				<select onchange="window.location.href=this.options[this.selectedIndex].value">
+					%for i in reversed(mas):													
+						<option value="#{{ i[5] }}">{{ i[0] }}</option>								
+					%end
+				</select>	
 			</div>
 		</div>
 
