@@ -17,9 +17,9 @@
  </script>
 
 <div>
-	<header class="site-header">
+	<header class="site-header">		
 		<div class="wrapper header-gallery">
-			<a class="site-title" href="#">Articles</a>
+			<a class="site-title" href="#" id="top">Articles</a>
 		</div>
 	</header>
 
@@ -28,7 +28,7 @@
         </div>
     </div> 
 
-	<form action="/writes" method="post">
+	<form action="/writes" method="post">		
 		<div class="page-content-small about">
 			<div class="top cardd mb-25000">
 			<svg width="160" height="32" viewBox="0 0 160 32">
@@ -50,7 +50,7 @@
 						</symbol>
 				  </defs>
 				  <use xlink:href="#stars" fill="#E0A129" stroke="black" mask="url(#perc)"></use>
-			</svg>
+			</svg>				
 				<p class="main-title">Write your article!</p>
 				<p><input type="text" size="50" name="TITLE" placeholder="♡ Article title ♡"></input></p>
 				<p><input type="text" size="50" name="IMAGE" placeholder="- image link -"></input></p>
@@ -74,7 +74,7 @@
 				%end
 			%end
 		%end
-
+		
 		<div class="page-content-small about">
 			<div class="top cardd mt-25000">
 				<p class="main-title">List of Articles</p>
@@ -95,6 +95,7 @@
 					<image height="500px" class="round" src= {{ i[4] }}/></br>
 					<p class="main-text val-text">{{ i[1] }}</p>					
 					<p class="main-text text-right">{{ i[2] }} - {{ i[3] }}</p>
+					<a href="#top" class="btn btn-warning">Back</a>
 				</div>
 			</div>
 		%end		

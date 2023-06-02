@@ -1,9 +1,9 @@
 from turtle import title
 from bottle import request, post
-import re
 from datetime import datetime
 import os
 import json
+from models.reviews_check import check_mail, check_name
 
 """
 Routes and views for the bottle application.
@@ -130,9 +130,9 @@ def review():
             # проверка на длину полей
             if (len("%s" % reviewTXT) >= 6 and len("%s" % username) >= 4):
                 # проверка корректности имени пользователя
-                if (NAME_REGEX.match(username)):
+                if (check_name(username)):
                     # проверка корректности почты
-                    if (EMAIL_REGEX.match(mail)):
+                    if (check_mail(mail)):
                         # проверка на существование почты в файле
                         if (mail in file):
                             # проверка на соответствие никнейма
@@ -175,6 +175,3 @@ def review():
         year=datetime.now().year,
         rev=file,
         count=num)
-
-NAME_REGEX = re.compile(r"^[a-z0-9]+$", re.I)
-EMAIL_REGEX = re.compile(r"^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$")
