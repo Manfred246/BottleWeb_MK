@@ -161,7 +161,7 @@ def review():
                     else:
                         mes = 'Error! Invalid mail!'
                 else:
-                    mes = ''
+                    mes = 'Error! Invalid nickname!'
             else:
                 mes = 'Error! The length of the review must be at least 6 characters, and the length of the name must be at least 4!'
         else:
@@ -176,5 +176,5 @@ def review():
         rev=file,
         count=num)
 
-NAME_REGEX = re.compile(r"^[a-zA-Z0-9]")
+NAME_REGEX = re.compile(r"^[a-z0-9]+$", re.I)
 EMAIL_REGEX = re.compile(r"^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$")
