@@ -17,9 +17,26 @@
  </script>
 
 <div>
+		%mass = []
+		%counter = 0
+		%if len(rev) != 0:
+			%for i in range(int(count + 1)):
+				%if i != 0:
+					%for j in rev:
+						%for k in range(len(rev[j]['reviews'])):
+							%if rev[j]['num'][k] == i:
+								%counter += 1
+								%mass.append([rev[j]['name'], j, rev[j]['reviews'][k], rev[j]['date'][k]])								
+							%end
+						%end
+					%end
+				%end
+			%end
+		%end
+
 	<header class="site-header">
 		<div class="wrapper header-gallery">
-			<a class="site-title" href="#">Site Reviews</a>
+			<a class="site-title" href="#">Site Reviews ({{ counter }})</a>
 		</div>
 	</header>
 
@@ -31,21 +48,7 @@
 				<p><input type="text" size="50" name="ADRESS" placeholder="Your email"></input></p>
 				<p><button class="btn btn-warning-new" name="BTNSEND" type="submit" value="Send">Send</button></p>
 			</div>
-		</div>
-		%mass = []
-		%if len(rev) != 0:
-			%for i in range(int(count + 1)):
-				%if i != 0:
-					%for j in rev:
-						%for k in range(len(rev[j]['reviews'])):
-							%if rev[j]['num'][k] == i:
-								%mass.append([rev[j]['name'], j, rev[j]['reviews'][k], rev[j]['date'][k]])								
-							%end
-						%end
-					%end
-				%end
-			%end
-		%end
+		</div>		
 		
 		%for i in reversed(mass):
 			<div class="page-content">
