@@ -129,35 +129,39 @@ def review():
         if (len("%s" % reviewTXT) > 0 and len("%s" % username) > 0 and len("%s" % mail) > 0):
             # проверка на длину полей
             if (len("%s" % reviewTXT) >= 6 and len("%s" % username) >= 4):
-                # проверка корректности почты
-                if (EMAIL_REGEX.match(mail)):
-                    # проверка на существование почты в файле
-                    if (mail in file):
-                        # проверка на соответствие никнейма
-                        if (username in file[mail]['name']):
-                            # проверка на дублирование отзыва
-                            if (reviewTXT not in file[mail]['reviews']):                                
-                                # добавление к файлу
-                                num += 1
-                                file[mail]['reviews'].append(reviewTXT)
-                                file[mail]['num'].append(num)
-                                file[mail]['date'].append(datetime.now().strftime("%d %b %Y"))
-                                with open('reviews.json', 'w') as outfile:
-                                    json.dump(file, outfile, indent=4)
-                                mes = 'Thank you for your feedback'
+                # проверка корректности имени пользователя
+                if (NAME_REGEX.match(username)):
+                    # проверка корректности почты
+                    if (EMAIL_REGEX.match(mail)):
+                        # проверка на существование почты в файле
+                        if (mail in file):
+                            # проверка на соответствие никнейма
+                            if (username in file[mail]['name']):
+                                # проверка на дублирование отзыва
+                                if (reviewTXT not in file[mail]['reviews']):                                
+                                    # добавление к файлу
+                                    num += 1
+                                    file[mail]['reviews'].append(reviewTXT)
+                                    file[mail]['num'].append(num)
+                                    file[mail]['date'].append(datetime.now().strftime("%d %b %Y"))
+                                    with open('reviews.json', 'w') as outfile:
+                                        json.dump(file, outfile, indent=4)
+                                    mes = 'Thank you for your feedback'
+                                else:
+                                    mes = 'Error! You have already left this review before!'
                             else:
-                                mes = 'Error! You have already left this review before!'
+                                mes = 'Error! Another name has already been registered to this email!'
                         else:
-                            mes = 'Error! Another name has already been registered to this email!'
+                            # создание новой записи в файле
+                            num += 1
+                            file[mail] = {'name': username, 'reviews':[reviewTXT], 'date':[datetime.now().strftime("%d %b %Y")], 'num':[num]}
+                            with open('reviews.json', 'w') as outfile:
+                                json.dump(file, outfile, indent=4)
+                            mes = 'Thank you for your feedback'
                     else:
-                        # создание новой записи в файле
-                        num += 1
-                        file[mail] = {'name': username, 'reviews':[reviewTXT], 'date':[datetime.now().strftime("%d %b %Y")], 'num':[num]}
-                        with open('reviews.json', 'w') as outfile:
-                            json.dump(file, outfile, indent=4)
-                        mes = 'Thank you for your feedback'
+                        mes = 'Error! Invalid mail!'
                 else:
-                    mes = 'Error! Invalid mail!'
+                    mes = ''
             else:
                 mes = 'Error! The length of the review must be at least 6 characters, and the length of the name must be at least 4!'
         else:
@@ -172,5 +176,5 @@ def review():
         rev=file,
         count=num)
 
-#NAME_REGEX = re.compile(r"^[]")
+NAME_REGEX = re.compile(r"^[a-zA-Z0-9]")
 EMAIL_REGEX = re.compile(r"^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$")
