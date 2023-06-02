@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="models\writes_check.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="models\reviews_check.py">
       <SubType>Code</SubType>
     </Compile>

@@ -17,22 +17,22 @@
  </script>
 
 <div>
-		%mass = []
-		%counter = 0
-		%if len(rev) != 0:
-			%for i in range(int(count + 1)):
-				%if i != 0:
-					%for j in rev:
-						%for k in range(len(rev[j]['reviews'])):
-							%if rev[j]['num'][k] == i:
-								%counter += 1
-								%mass.append([rev[j]['name'], j, rev[j]['reviews'][k], rev[j]['date'][k]])								
-							%end
+	%mass = []
+	%counter = 0
+	%if len(rev) != 0:
+		%for i in range(int(count + 1)):
+			%if i != 0:
+				%for j in rev:
+					%for k in range(len(rev[j]['reviews'])):
+						%if rev[j]['num'][k] == i:
+							%counter += 1
+							%mass.append([rev[j]['name'], j, rev[j]['reviews'][k], rev[j]['date'][k]])								
 						%end
 					%end
 				%end
 			%end
 		%end
+	%end
 
 	<header class="site-header">
 		<div class="wrapper header-gallery">
