@@ -2,9 +2,9 @@
 
 
 <div>
-	<header class="site-header">		
+	<header href="top" class="site-header">		
 		<div class="wrapper header-gallery">
-			<a class="site-title" href="#" id="top">Articles</a>
+			<a class="site-title" href="#">Articles</a>
 		</div>
 	</header>
 
@@ -75,9 +75,9 @@
 		%for i in reversed(mas):
 			<a id= {{ i[5] }}></a>
 			<div class="page-content">
-				<div class="ttop cardd">			
+				<div class="top cardd">			
 					<p class="main-title">{{ i[0] }}</p>
-					<image height="500px" class="round" src= {{ i[4] }}/></br>
+					<image height="300px" class="round" src= {{ i[4] }}/></br>
 					<p class="main-text val-text">{{ i[1] }}</p>					
 					<p class="main-text text-right">{{ i[2] }} - {{ i[3] }}</p>
 					<a href="#top" class="btn btn-warning">Back</a>
