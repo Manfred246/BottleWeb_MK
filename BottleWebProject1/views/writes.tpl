@@ -97,7 +97,7 @@
 });
 
 $(document).ready(function() {
-	 % if message != '':
+ % if message != '':
 
     styledSwal.fire('{{message}}');
 
