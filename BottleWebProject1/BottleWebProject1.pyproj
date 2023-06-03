@@ -44,6 +44,9 @@
     <Compile Include="utests\test_reviews.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="utests\test_writes.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
