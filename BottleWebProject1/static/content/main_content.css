@@ -77,17 +77,20 @@ html {
     margin: 0px;
 }
 
+.image-back {
+    backdrop-filter: blur(3px);
+}
+
 body {
     height: 100%;
     width: 100%;
-    padding: 0;
-    margin: 0;
     background-image: url("https://images.wallpaperscraft.ru/image/single/bereg_pesok_derevia_7093_1280x720.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    backdrop-filter: blur(3px);
+    padding: 0;
+    margin: 0;
     letter-spacing: 0.01em;
     line-height: 200%;
     font-size: 16px;

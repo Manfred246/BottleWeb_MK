@@ -1,21 +1,5 @@
 % rebase('layout.tpl', title='Reviews', year=year)
 
-<script>
- const styledSwal = Swal.mixin({
-    background: 'linear-gradient(180deg, var(--gradient-four), var(--gradient-three), var(--gradient-one))',
-    customClass: {
-        confirmButton: 'btn btn-warning'
-    },
-    buttonsStyling: false
-});
-
- % if message != '':
-
-    styledSwal.fire('{{message}}');
-
-% end
- </script>
-
 <div>
 	%mass = []
 	%counter = 0
@@ -61,3 +45,21 @@
 		%end
 	</form>
 </div>
+
+ <script>
+ const styledSwal = Swal.mixin({
+    background: 'linear-gradient(180deg, var(--gradient-four), var(--gradient-three), var(--gradient-one))',
+    customClass: {
+        confirmButton: 'btn btn-warning'
+    },
+    buttonsStyling: false
+});
+
+$(document).ready(function() {
+	 % if message != '':
+
+    styledSwal.fire('{{message}}');
+
+% end
+});
+ </script>
